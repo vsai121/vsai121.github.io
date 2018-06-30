@@ -503,3 +503,9 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+.profile{
+  height: 50px;
+  width:60px;
+  border-radius: 50%;
+}
