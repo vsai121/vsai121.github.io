@@ -19,10 +19,10 @@ $(window).scroll(function() {
 		opacity: 1 - ele1y/500 + 0.7
 	});
 	$(ele2).css({
-		opacity: 1 - ele2y/500 +0.7
+		opacity: 1 - ele2y/500 +0.5
 	});
 	$(ele3).css({
-		opacity: 1 - ele3y/500 +0.7
+		opacity: 1 - ele3y/500 +0.5
 	});
 	
 	
@@ -121,6 +121,21 @@ function gallery(){
 $('.flip').hover(function(){
 	        $(this).find('.card').toggleClass('flipped');
 });
+
+function openTab(tab){
+  window.location.hash=tab.innerText.trim();
+  /*tab.innerText show some white space at the beginning of the string in IE. It's better to trim that using trim() method. trim() removes white space from both beginning and ending of a string. So replace 'tab.innerText' with 'tab.innerText.trim()' */
+}
+
+
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 $(document).ready(function() {
 	tick();
