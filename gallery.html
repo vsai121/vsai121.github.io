@@ -34,19 +34,22 @@
  
   <body>
    
-    <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Logo</a>
+<header>
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand logo" href="#"><img src= "/static/images/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about.html">About</a>
+		</li>
+		<li class="nac-item">
+		  <a class="nav-link" href="/theme.html">Theme</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Gallery</a>
@@ -58,7 +61,7 @@
 </header>
 
 
-<div class="container">
+<div class="container-fluid">
 	        <div class="row mt-4">
 	            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
 	                <h1 class="gallery-title">Gallery</h1>
@@ -72,19 +75,13 @@
 				            	<a href="javascript:void(0);" class="filter-button active" data-filter="all">All</a>	            				
 	            			</li>
 	            			<li class="list-inline-item">
-				            	<a href="javascript:void(0);" class="filter-button" data-filter="Branding">Branding</a>	            				
+				            	<a href="javascript:void(0);" class="filter-button" data-filter="Branding">2019</a>	            				
 	            			</li>
 	            			<li class="list-inline-item">
-				            	<a href="javascript:void(0);" class="filter-button" data-filter="Design">Logo Design</a>	            				
+				            	<a href="javascript:void(0);" class="filter-button" data-filter="Design">2018</a>	            				
 	            			</li>
 	            			<li class="list-inline-item">
-				            	<a href="javascript:void(0);" class="filter-button" data-filter="Photography">Photography</a>	            				
-	            			</li>
-	            			<li class="list-inline-item">
-				            	<a href="javascript:void(0);" class="filter-button" data-filter="Videography">Videography</a>	            				
-	            			</li>
-	            			<li class="list-inline-item">
-				            	<a href="javascript:void(0);" class="filter-button" data-filter="Web_Design">Web Design</a>
+				            	<a href="javascript:void(0);" class="filter-button" data-filter="Photography">2017</a>	            				
 	            			</li>
 	            		</ul>
 	            	</div> 
@@ -93,110 +90,119 @@
 	    </div>
         <div class="row no-gutters">
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Branding">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Branding">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
-				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Design">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Design">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
             
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Web_Design">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Web_Design">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Branding">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Branding">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Videography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Videography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Photography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Photography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Web_Design">
-                <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
-                <div class="overlay">
-				    
-				</div>
-            </div>
-
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Videography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Web_Design">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Photography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Videography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Videography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Photography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Web_Design">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Videography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Videography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Web_Design">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Branding">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Videography">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Photography">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Branding">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div>
 
-            <div class="col-3 col-sm-2 col-md-2 col-lg-2 filter Design">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Photography">
+                <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
+                <div class="overlay">
+				    
+				</div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 filter Design">
                 <img src="http://fakeimg.pl/365x365/" class="img-fluid">  
                 <div class="overlay">
 				    
 				</div>
             </div> 
         </div>
+		
+		<div class="img-popup">
+			  <img src="http://fakeimg.pl/365x365/" alt="Popup Image">
+			  <div class="close-btn">
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+        </div>
+		
+		
 
 
 
@@ -205,8 +211,7 @@
 <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="/static/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="/static/js/back-to-top.js"> </script>
 
-<script type="text/javascript" src="/static/js/animation.js"> </script>
+<script type="text/javascript" src="/static/js/animategallery.js"> </script>
 </body>
 </html>

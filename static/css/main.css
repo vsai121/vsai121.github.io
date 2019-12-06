@@ -11,6 +11,18 @@ body {
   color: #2c3e50;
 }
 
+main {
+	padding-top: 2rem;
+}
+
+h1 {
+  color: #444;
+  font: 700 200%/1.4 'Open Sans', sans-serif;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom:40px;
+}
+
 .back-to-top {
   cursor: pointer;
   position: fixed;
@@ -20,6 +32,19 @@ body {
   color: white;
 
 }
+@media screen and (min-width: 400px){
+		body{font-size: 14px;}
+}
+
+@media screen and (min-width: 600px){
+		body{font-size: 16px;}
+}
+
+@media screen and (min-width: 900px){
+		body{font-size: 18px;}
+}
+
+
 
 .logo img{
 	width:60px;
@@ -145,6 +170,8 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+  text-align:center;
+  margin-bottom: 2rem;
 }
 
 .information{
@@ -297,11 +324,15 @@ body {
 
 /* Content */
 
+.lead{
+	text-align:justify;
+}
 .read{
 min-width:100%;
 text-align:center;
 margin-top:2rem;
 }
+
 .read a {
   text-decoration:none;
   -webkit-transition: all 0.3s ease-out;
@@ -337,6 +368,15 @@ margin-top:2rem;
   border-color:#000;
   color:#fff;
 }
+
+.slogan {
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+
+/*Sponsors */
+
 
 
 
@@ -420,89 +460,174 @@ margin-top:2rem;
         padding-left: 5%;
 }
 
-
-@media screen and (min-height: 400px) {
-
-	#multi_item_carousel{
-		height: 50px;	
+#multi_item_carousel{
+		 height: max-content;
 	}
 
 	.team{
-		height: 50px;
+		 height: max-content;
 	}
 
-	#multi_item_carousel .carousel-item{
-		height: 50px;
-		overflow: hidden;
-	} 
-	#multi_item_carousel .carousel-item img{
-		height: 50px;
-	}
+.team img{
+	padding:0;
+}
+
+.team .card{
+	background-color: #34495e;
+	color: white;
+	border: none;
+}
+
+.card-body{
+	padding:0;
+	font-size:10px;
+    
+}
+
+.card-title{
+	padding:0;
+	font-size: 19px;
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:15px;
+	font-weight:600;
+}
+
+.card-body ul{
+	margin-bottom:0;
+}
+.card-body li{
+		display:inline-block;
+		width:24%;
+}
+
+.card-body a{
+	display: block;
+}
+
+.card-body .fa{
+  -webkit-transform: scale(2.5); 
+  -moz-transform: scale(2.5);
+  -o-transform: scale(2.5);
 
 }
 
+.card-body .fa-instagram{
+	color: #c0392b;
+}
+
+.card-body .fa-linkedin{
+	color: #3B5998;
+}
+
+.card-body .fa-envelope{
+	 color: #f39c12;
+}
+
+
+
+
+
+
+#multi_item_carousel .carousel-inner{
+		height: max-content;
+	} 
+
+
+#multi_item_carousel .carousel-item{
+		height: max-content;
+	} 
+
+
 @media screen and (min-height: 400px) {
 
-	#multi_item_carousel{
-		height: 100px;	
+		.card-body .fa{
+	  -webkit-transform: scale(1.2); 
+	  -moz-transform: scale(1.2);
+	  -o-transform: scale(1.2);
+
 	}
 
-	.team{
-		height: 100px;
+	.card-title{
+		font-size: 13px;
 	}
 
-	#multi_item_carousel .carousel-item{
-		height: 100px;
-		overflow: hidden;
-	} 
+	
 	#multi_item_carousel .carousel-item img{
-		height: 100px;
+		height: 70px;
 	}
 
 }
 
 @media screen and (min-height: 600px) {
 
-	#multi_item_carousel{
-		height: 120px;	
+    .card-title{
+		font-size: 15px;
 	}
 
-	.team{
-		height: 120px;
-	}
+   .card-body .fa{
+	  -webkit-transform: scale(1.4); 
+	  -moz-transform: scale(1.4);
+	  -o-transform: scale(1.4);
 
-	#multi_item_carousel .carousel-item{
-		height: 120px;
-		overflow: hidden;
-	} 
+	}
+	
+
 	#multi_item_carousel .carousel-item img{
-		height: 120px;
+		height: 125px;
 	}
 
 }
 
-@media screen and (min-height: 900px) {
+@media screen and (min-height: 800px) {
 
-	#multi_item_carousel{
-		height: 150px;	
+	 .card-title{
+		font-size: 18px;
 	}
 
-	.team{
-		height: 150px;
-	}
+     .card-body .fa{
+	  -webkit-transform: scale(1.8); 
+	  -moz-transform: scale(1.8);
+	  -o-transform: scale(1.8);
 
-	#multi_item_carousel .carousel-item{
-		height: 150px;
-		overflow: hidden;
-	} 
+	}
+	
+
+	
 	#multi_item_carousel .carousel-item img{
 		height: 150px;
-		padding-left:15%;
-		padding-right: 15%;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+	 .card-title{
+		font-size: 28px;
+        margin-bottom: 20px;
+	}
+
+	.card-body .fa{
+	  -webkit-transform: scale(2.8); 
+	  -moz-transform: scale(2.8);
+	  -o-transform: scale(2.8);
+
+	}
+	
+
+
+	#multi_item_carousel .carousel-item img{
+		height: 350px;
+
 		
 	}
 
 }
+
+.card-text{
+	text-align:justify;
+}
+
 
 /*   Rules and FAQ CSS*/
 .tabbed-content{
@@ -513,7 +638,6 @@ margin-top:2rem;
 
 .tabs label{
 	min-width:48%;
-
 }
 
 .tabs label div{
@@ -566,6 +690,8 @@ margin-top:2rem;
   counter-reset: list;
   list-style: none;
   padding:0;
+  list-style-position: outside;
+   padding-left: 1.5em;
 }
 
 .tabs ol li {
@@ -581,12 +707,14 @@ margin-top:2rem;
   font-size: 13px;
   text-align: center;
   border-radius: 50%;
-  width: 2.2em;
-  height: 2.2em;
-  line-height: 2.3em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.6em;
   display: inline-block;
   margin-right: 0.5em;
 }
+
+
 
 
 
@@ -776,7 +904,13 @@ margin-top:2rem;
 
 .inner svg{
 	height:100%;
+	min-width: 100%;
+	
 }
+
+.inner svg image{
+	min-height: 100%;
+}	
 
 @media screen and (min-height: 400px) {
 	.flip .card {height: 400px;}
@@ -793,6 +927,20 @@ margin-top:2rem;
 
 
 /* Gallery */
+
+.gallery_filter_tab{
+	display: table;
+	margin: 0 auto;
+	
+}
+ .gallery-top-text{
+	 width:90%;
+	 margin:auto;
+ }
+ 
+ .gallery-top-text li{
+	margin: auto;
+ }
 
 .gallery-top-text li a {
   border: 1px solid #797979;
@@ -837,8 +985,186 @@ margin-top:2rem;
 }
 
 .no-gutters img{
-	min-width:100%;
-	margin-bottom:5px;
+	width: 500px;
+	height: 500px;
+	margin-top: 70px;
+	margin-right:20px;
+}
+
+.img-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.img-popup img {
+  max-width: 900px;
+  width: 100%;
+  min-height:100%;
+  opacity: 1;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+
+.close-btn {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.close-btn .bar {
+  height: 4px;
+  background-color: black;
+}
+
+.close-btn .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.close-btn .bar:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.opened {
+  display: flex;
+}
+
+.opened img {
+  animation: animatepopup 1s ease-in-out .8s;
+  -webkit-animation: animatepopup .3s ease-in-out forwards;
+}
+
+
+
+
+
+/*About Page */
+
+blockquote {
+	margin-top: 20px;
+  position: relative;
+  padding-left: 10px;
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  quotes: "“" "”" "‘" "’";
+}
+blockquote::before, blockquote::after {
+  color: #c6c6c6;
+  font-size: 2.0em;
+  font-weight: 400;
+  line-height: 0.1em;
+}
+blockquote::before {
+  position: absolute;
+  left: 0;
+  content: open-quote;
+  margin-right: 0.15em;
+  vertical-align: -0.15em;
+}
+blockquote::after {
+  content: close-quote;
+  vertical-align: -0.7em;
+}
+
+@-webkit-keyframes live {
+  0% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    opacity: 1;
+  }
+}
+@keyframes live {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.yellow {
+  background-color: #f0ec75;
+}
+
+.live {
+  -webkit-animation: live 5s infinite;
+}
+
+.belongTo {
+  text-align: right;
+  margin-right: 200px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  opacity: 1;
+  -webkit-animation-name: fadeInOpacity;
+          animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
