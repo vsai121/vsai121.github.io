@@ -102,27 +102,6 @@ function animate_top (){
 		$('#back-to-top').tooltip('show');
 }
 
-function gallery(){
-	
-	$(".filter-button").click(function() {
-    var value = $(this).attr("data-filter");
-    if (value == "all") {
-      $(".filter").show();
-    } else {
-      $(".filter")
-        .not("." + value)
-        .hide();
-      $(".filter")
-        .filter("." + value)
-        .show();
-    }
-    if ($(".filter-button").removeClass("active")) {
-      $(this).addClass("active");
-    }
-  });
-  
-  $(this).addClass("active");
-}
 
 $('.flip').hover(function(){
 	        $(this).find('.card').toggleClass('flipped');
@@ -171,7 +150,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 $(document).ready(function() {
 	tick();
-	gallery();
 	animate_top();
 
 
