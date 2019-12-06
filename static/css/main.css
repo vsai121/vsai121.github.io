@@ -9,6 +9,7 @@ html, body {
 body {
   padding-top: 1rem;
   color: #2c3e50;
+
 }
 
 main {
@@ -848,6 +849,11 @@ margin-top:2rem;
 
 /* FLIP CARDS */
 
+.cat{
+	background-color: #130f40;
+
+}
+
 .flip {
   -webkit-perspective: 800;   
           perspective: 800;
@@ -1029,6 +1035,8 @@ margin-top:2rem;
 
 
 /*About Page */
+
+
 
 blockquote {
 	margin-top: 20px;
