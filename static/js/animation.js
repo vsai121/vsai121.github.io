@@ -119,6 +119,8 @@ function toggleAccordion(){
   this.classList.toggle('active');
   this.nextElementSibling.classList.toggle('active');
 }
+
+
 jQuery(document).ready(function($){
 	
 	//close popup
