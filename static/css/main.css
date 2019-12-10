@@ -176,6 +176,15 @@ h1 {
 
 .information{
 	width:100%;
+	
+}
+
+.information img{
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+   margin-top:10%;
+    border-radius: 5%;
 }
 
 /* Register CSS */
@@ -969,7 +978,7 @@ margin-top:2rem;
 	
 }
  .gallery-top-text{
-	 width:90%;
+	 width:100%;
 	 margin:auto;
  }
  
@@ -985,6 +994,7 @@ margin-top:2rem;
   display: inline-block;
   margin: 3px 0;
 }
+
 .filter-button.active {
   background: #797979;
   color: #fff;
@@ -993,16 +1003,17 @@ margin-top:2rem;
   border: 1px solid #fff;
 }
 
+.no-gutters{
+		margin:auto;
+		width: 90%;
+}
 .no-gutters img{
-	width: 500px;
-	height: 500px;
-	margin-top: 70px;
-	margin-right:20px;
+	margin-top: 40px;
 }
 
 .img-popup {
   position: fixed;
-  top: 0;
+  top: 90px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1011,18 +1022,18 @@ margin-top:2rem;
   justify-content: center;
   align-items: center;
   display: none;
+
 }
 
 .img-popup img {
-  max-width: 900px;
-  width: 100%;
-  min-height:100%;
+  max-width: 1200px;
+  width: 75%;
+  height: 80%;
+  overflow:auto;
   opacity: 1;
-  transform: translateY(-100px);
-  -webkit-transform: translateY(-100px);
-  -moz-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  -o-transform: translateY(-100px);
+  position: fixed;
+  top: 90px;
+ 
 }
 
 .close-btn {
@@ -1032,7 +1043,7 @@ margin-top:2rem;
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 15%;
+  top: 1%;
   right: 2%;
   cursor: pointer;
 }
@@ -1057,6 +1068,23 @@ margin-top:2rem;
 .opened img {
   animation: animatepopup 1s ease-in-out .8s;
   -webkit-animation: animatepopup .3s ease-in-out forwards;
+}
+
+@media screen and (min-height: 500px) {
+	.no-gutters img{width: 200px;height: 175px;}
+}
+
+@media screen and (min-height: 700px) {
+	.no-gutters img{width: 300px;height: 250px;}
+}
+
+@media screen and (min-height: 900px) {
+	.no-gutters img{width: 300px;height: 250px;}
+}
+
+@media screen and (min-width: 1000px) {
+	.no-gutters img{width: 500px;height: 500px;}
+
 }
 
 
