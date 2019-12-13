@@ -2,8 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
-html, body {
-  overflow-x: hidden;
+html {
+  overflow-x: hidden !important;
 }
 
 body {
@@ -336,6 +336,7 @@ h1 {
 .lead{
 	text-align:justify;
 }
+
 .read{
 min-width:100%;
 text-align:center;
@@ -378,12 +379,12 @@ margin-top:2rem;
   color:#fff;
 }
 
-.slogan {
-	font-size: 1.7rem;
-	text-align: center;
+.col-md-5 img{
+	max-height:400px;
 }
-
-
+.featurette .col-md-5{
+	height: max-content;
+}
 /*Sponsors */
 
 
@@ -482,7 +483,7 @@ margin-top:2rem;
 .team .card{
 	color: white;
 	border: none;
-	max-width: 250px;
+	max-width: 220px;
     margin:auto;
     
 }
@@ -1005,10 +1006,11 @@ margin-top:2rem;
 
 .no-gutters{
 		margin:auto;
-		width: 90%;
+		width: 100%;
 }
 .no-gutters img{
 	margin-top: 40px;
+	margin 
 }
 
 .img-popup {
@@ -1075,15 +1077,11 @@ margin-top:2rem;
 }
 
 @media screen and (min-height: 700px) {
-	.no-gutters img{width: 300px;height: 250px;}
-}
-
-@media screen and (min-height: 900px) {
-	.no-gutters img{width: 300px;height: 250px;}
+	.no-gutters img{width: 270px;height: 220px;}
 }
 
 @media screen and (min-width: 1000px) {
-	.no-gutters img{width: 500px;height: 500px;}
+	.no-gutters img{width: 350px;height: 300px;}
 
 }
 
@@ -1093,7 +1091,10 @@ margin-top:2rem;
 
 /*About Page */
 
-
+.jumbotron{
+    text-align:center;
+	opacity: 0.7;
+}
 
 blockquote {
 	margin-top: 20px;
