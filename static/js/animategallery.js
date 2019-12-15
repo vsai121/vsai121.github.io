@@ -27,7 +27,7 @@ $(document).ready(function() {
  
     var i;
 	for (i = 1; i <= 100; i++) {
-	 $('.no-gutters').append("<div class=\"col-6 col-sm-6 col-md-4 col-lg-4 filter 2019\"><img src=\"/static/images/Gallery/_" + i.toString() + ".jpg\" class=\"img-fluid\"><div class=\"overlay\"></div></div>")
+	 $('.no-gutters').append("<div class=\"col-6 col-sm-6 col-md-4 col-lg-4 filter 2019\"><img src=\"static/images/Gallery/_" + i.toString() + ".jpg\" class=\"img-fluid\"><div class=\"overlay\"></div></div>")
 	}
   
   gallery();
