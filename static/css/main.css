@@ -1133,134 +1133,110 @@ margin-top:2rem;
 	opacity: 0.7;
 }
 
-blockquote {
-	margin-top: 20px;
+.messages{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+  color: black;
+  margin: auto;
+  
+}
+
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
   position: relative;
-  padding-left: 10px;
-  font-family: "Georgia", serif;
-  font-size: 1.5rem;
-  font-weight: 300;
+  overflow: hidden;
+  min-width: 220px;
+  max-width: 400px;
+  width: 100%;
   color: #333;
-  quotes: "“" "”" "‘" "’";
+  text-align: left;
+  box-shadow: none !important;
+  margin:10px;
 }
-blockquote::before, blockquote::after {
-  color: #c6c6c6;
-  font-size: 2.0em;
-  font-weight: 400;
-  line-height: 0.1em;
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
-blockquote::before {
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 25px 3px 30px 3px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
   position: absolute;
-  left: 0;
-  content: open-quote;
-  margin-right: 0.15em;
-  vertical-align: -0.15em;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
 }
-blockquote::after {
-  content: close-quote;
-  vertical-align: -0.7em;
+figure.snip1157 blockquote:before {
+  top: 5px;
+  left: 2px;
 }
-
-@-webkit-keyframes live {
-  0% {
-    -webkit-transform: scale(0.97);
-    transform: scale(0.97);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0.4;
-  }
-  100% {
-    -webkit-transform: scale(0.97);
-    transform: scale(0.97);
-    opacity: 1;
-  }
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
 }
-@keyframes live {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: scale(0.97);
-    transform: scale(0.97);
-    opacity: 0.4;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  position: absolute;
 }
-.yellow {
-  background-color: #f0ec75;
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
 }
-
-.live {
-  -webkit-animation: live 5s infinite;
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
 }
-
-.belongTo {
-  text-align: right;
-  margin-right: 20px;
-  margin-top: 50px;
-  font-size: 16px;
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
 }
 
 
 
-.hidden {
-  display: none;
-}
+/* Demo purposes only */
 
-.fade-in {
-  opacity: 1;
-  -webkit-animation-name: fadeInOpacity;
-          animation-name: fadeInOpacity;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
 
-@-webkit-keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (min-height: 500px) {
-	blockquote{font-size:13px;}
-}
-
-@media screen and (min-height: 700px) {
-	blockquote{font-size:16px;}
-}
-
-@media screen and (min-width: 1000px) {
-	blockquote{font-size:20px;}
-	#crusader blockquote{
-	margin-top: 20%;
-}
-
-}
 
 
 /* MAPS */

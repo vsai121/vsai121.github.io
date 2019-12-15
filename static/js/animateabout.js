@@ -1,124 +1,26 @@
-var dir = document.getElementById("live1");
-var amb = document.getElementById("live2");
-var cru = document.getElementById("live3");
-
-$(window).scroll(function() {
-	var dirP = dir.getBoundingClientRect().y;
-	var ambP = amb.getBoundingClientRect().y;
-	var cruP = cru.getBoundingClientRect().y;
-	
-	if(dirP <= -1000 || dirP >= 3000){
-		document.getElementById("live1").innerHTML = "";
-		i = 0;
-		document.getElementById('belongTo1').classList.add("hidden");
-	}	
-	else{
-		typingDirectorMessage();
-	}
-	
-	if(ambP <= -300 || ambP >= 1000){
-		document.getElementById("live2").innerHTML = "";
-		j = 0;
-		document.getElementById('belongTo2').classList.add("hidden");
-	}	
-	else{
-		typingAmbassadorMessage();
-	}
-	
-	if(cruP <= 0 || cruP >= 1000){
-		document.getElementById("live3").innerHTML = "";
-		k = 0;
-		document.getElementById('belongTo3').classList.add("hidden");
-	}	
-	else{
-		typingCrusadorMessage();
-	}
-	
-	console.log(cruP);
-
-	
-});
 
 
-var speed = 100;
-var i = 0;
-var j = 0;
-var k = 0;
+$.fn.jQuerySimpleCounter = function( options ) {
+	var settings = $.extend({
+		start:  0,
+		end:    100,
+		easing: 'swing',
+		duration: 400,
+		complete: ''
+	}, options );
 
-var Directortxt = 'On behalf of the NITK Karavali Marathon Team, I welcome runners, spectators, and volunteers to the NITK Karavali Marathon 2020. We are pleased to show off our fair beach side trail as runners make their way through the scenic NITK Surathkal beach, along the beach side temple and lighthouse.\
- It is our mission to promote a healthy lifestyle through exercise. Whether this is your first 5K or your 50th marathon, we applaud your commitment to a healthy way of life and your support of the running community.In addition to promoting #Fit India Movement, the 2020 edition of the Karavali Marathon will drive awareness “Combat Climate Change “and drive call to action in Karavali region.\
- This event would not be possible without the dedication of our volunteers, including our year-round race committee and the hundreds of people that volunteer on race weekend. You all make NITK Karavali Marathon the amazing event that it is. Thank you!\
- To everyone competing this weekend, from our youngest fun runners to our ultra marathoners, all of us at the NITK Karavali Marathon Team wish you good luck and a good run!';
-const typingDirectorMessage = () => {
-	
-	if (i < Directortxt.length) {
-		document.getElementById("live1").innerHTML += 		Directortxt.charAt(i);
-		i++;
-		setTimeout(typingDirectorMessage, speed);
-	} else {
-		//document.getElementById('live').classList.add("live");
-		document.getElementById('belongTo1').classList.add("fade-in");
-		document.getElementById('belongTo1').classList.remove("hidden");
-	}
-		
+	var thisElement = $(this);
+
+	$({count: settings.start}).animate({count: settings.end}, {
+		duration: settings.duration,
+		easing: settings.easing,
+		step: function() {
+			var mathCount = Math.ceil(this.count);
+			thisElement.text(mathCount);
+		},
+		complete: settings.complete
+	});
 };
-
-
-
-var Ambassadortxt = 'Ambassador\'s message - a random message to test the animation';
-const typingAmbassadorMessage = () => {
-
-	if (j < Ambassadortxt.length) {
-		document.getElementById("live2").innerHTML += Ambassadortxt.charAt(j);
-		j++;
-		setTimeout(typingAmbassadorMessage , speed);
-	} else {
-		//document.getElementById('live').classList.add("live");
-		document.getElementById('belongTo2').classList.add("fade-in");
-		document.getElementById('belongTo2').classList.remove("hidden");
-	}
-		
-};
-
-
-var Crusadortxt = 'An admirable dual initiative to encourage the youth to embrace both fitness and green objectives.\
- Begin. Adapt. Survive.';
-const typingCrusadorMessage = () => {
-
-	if (k < Crusadortxt.length) {
-		document.getElementById("live3").innerHTML += Crusadortxt.charAt(k);
-		k++;
-		setTimeout(typingCrusadorMessage , speed);
-	} else {
-		//document.getElementById('live').classList.add("live");
-		document.getElementById('belongTo3').classList.add("fade-in");
-		document.getElementById('belongTo3').classList.remove("hidden");
-	}
-		
-};
-
-
-	$.fn.jQuerySimpleCounter = function( options ) {
-	    var settings = $.extend({
-	        start:  0,
-	        end:    100,
-	        easing: 'swing',
-	        duration: 400,
-	        complete: ''
-	    }, options );
-
-	    var thisElement = $(this);
-
-	    $({count: settings.start}).animate({count: settings.end}, {
-			duration: settings.duration,
-			easing: settings.easing,
-			step: function() {
-				var mathCount = Math.ceil(this.count);
-				thisElement.text(mathCount);
-			},
-			complete: settings.complete
-		});
-	};
 
 
 $('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
