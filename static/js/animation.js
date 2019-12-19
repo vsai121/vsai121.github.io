@@ -77,25 +77,7 @@ function tick() {
 	
 }
 
-function animate_top (){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
 
-		$('#back-to-top').click(function () {
-			$('#back-to-top').tooltip('hide');
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-
-		$('#back-to-top').tooltip('show');
-}
 
 
 $('.flip').hover(function(){
@@ -145,8 +127,5 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 $(document).ready(function() {
 	tick();
-	animate_top();
-
-
 	
 });

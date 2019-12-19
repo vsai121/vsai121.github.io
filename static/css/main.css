@@ -459,8 +459,6 @@ margin-top:2rem;
 }
 
 
-
-
 /*Team CSS */
 
 #multi_item_carousel .carousel-item img{
@@ -469,6 +467,7 @@ margin-top:2rem;
 
 #multi_item_carousel{
 		 height: max-content;
+		 padding:0;
 	}
 
 .team{
@@ -492,18 +491,18 @@ margin-top:2rem;
     
 }
 
-.card-body{
+.team .card-body{
 	padding:0;
 	font-size:10px;
 
 }
 
-.card p{
+.team .card p{
 	color:black;
     min-height: 20px;
 }
 
-.card-title{
+.team .card-title{
 
 	padding:0;
 	font-size: 19px;
@@ -516,15 +515,15 @@ margin-top:2rem;
 	
 }
 
-.card-body ul{
+.team .card-body ul{
 	margin-bottom:3px;
 }
-.card-body li{
+.team .card-body li{
 		display:inline-block;
 		width:24%;
 }
 
-.card-body a{
+.team .card-body a{
 	display: block;
 }
 
@@ -692,14 +691,30 @@ margin-top:2rem;
 	text-align:justify;
 }
 
-.team .carousel-control-prev{
-	max-width: 50px;
+
+
+.team .carousel-control-prev-icon{
+	position:absolute;
+	left: -5px;
 }
 
-.team .carousel-control-next{
-	max-width: 50px;
+.team .carousel-control-next-icon{
+	position:absolute;
+	right: -5px;
 }
 
+.team .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 20px;
+  color: red;
+}
+
+.team .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 20px;
+  color: red;
+}
 
 
 
@@ -952,6 +967,7 @@ margin-top:2rem;
   	margin: auto;
 	margin-bottom: 50px;
 	height: 200px;
+	max-width: 400px;
 
 }
 
@@ -1250,7 +1266,7 @@ figure.snip1157 .author h5 span {
 /* Media mentions */
 
 
-.card {
+.media .card {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
@@ -1259,13 +1275,18 @@ figure.snip1157 .author h5 span {
   transition: all 0.3s ease-in-out;
 }
 
-.card .card-img {
+.media .card .card-img {
   height: auto;
-  width: 100%;
+  width: 90%;
   background-color: #4426a8;
   position: relative;
   background-size: cover;
   background-position: center top;
+}
+
+.media .card .card-img-top {
+  height: auto;
+  border: 10px;
 }
 
 .card:hover {
@@ -1273,13 +1294,13 @@ figure.snip1157 .author h5 span {
   transition: all 0.5s ease-in-out;
 }
 
-.card .card-content span {
+.media .card .card-content span {
   margin-bottom: 0.5rem;
   position: relative;
   display: block;
 }
 
-.card svg {
+.media .card svg {
   position: absolute;
   top: 0;
 }
